@@ -2,11 +2,11 @@
 
 <img src="assets/readme/logo.gif" width="128" alt="GW Studio Logo">
 
-<h1>Gevo Studio · Discord Bots</h1>
+<h1>Gevo Studio · Discord Bot</h1>
 
 <p>
-<b>Ticket-System, Transcripts, Bewertungen, Lieferzeit, Preisliste und Rechnungen</b><br>
-Die zwei Bots hinter dem Discord-Server von <a href="https://gevo-studio.de">Gevo Web Studio</a>.
+<b>Der All-in-One-Bot für deinen Discord-Server</b><br>
+Tickets, Transcripts, Bewertungen, Rechnungen und mehr – live im Einsatz bei <a href="https://gevo-studio.de">Gevo Web Studio</a>.
 </p>
 
 <p>
@@ -22,8 +22,8 @@ Die zwei Bots hinter dem Discord-Server von <a href="https://gevo-studio.de">Gev
 <a href="#-commands">Commands</a> ·
 <a href="#-buttons--automatik">Buttons</a> ·
 <a href="#-panels">Panels</a> ·
-<a href="#-starten">Starten</a> ·
-<a href="#-sicherheit">Sicherheit</a>
+<a href="#-sicherheit">Sicherheit</a> ·
+<a href="#-jetzt-bestellen"><b>Jetzt bestellen</b></a>
 </p>
 
 </div>
@@ -36,27 +36,11 @@ Die zwei Bots hinter dem Discord-Server von <a href="https://gevo-studio.de">Gev
 <img src="assets/readme/code-stats.svg" width="840" alt="Code-Verteilung: JavaScript 100 %. Panels und Design 35,5 %, Transcript-System 32,6 %, Tickets und Logik 18,0 %, Rechnungs-Bot 11,7 %, Konfiguration 2,1 %">
 </p>
 
-<details>
-<summary><b>Alle Dateien als Tabelle</b></summary>
-<br>
-<table>
-<tr><th align="left">Datei</th><th align="left">Bereich</th><th align="right">Zeilen</th><th align="right">Größe</th><th align="right">Anteil</th></tr>
-<tr><td><code>admin/transcript.mjs</code></td><td>Transcript-System</td><td align="right">672</td><td align="right">41,0 KB</td><td align="right">32,6 %</td></tr>
-<tr><td><code>admin/panels.mjs</code></td><td>Panels &amp; Design</td><td align="right">469</td><td align="right">24,7 KB</td><td align="right">19,7 %</td></tr>
-<tr><td><code>admin/bot.mjs</code></td><td>Tickets &amp; Logik</td><td align="right">509</td><td align="right">22,6 KB</td><td align="right">18,0 %</td></tr>
-<tr><td><code>admin/panels-v2.mjs</code></td><td>Panels &amp; Design</td><td align="right">353</td><td align="right">19,9 KB</td><td align="right">15,9 %</td></tr>
-<tr><td><code>bot.mjs</code></td><td>Rechnungs-Bot</td><td align="right">403</td><td align="right">14,8 KB</td><td align="right">11,7 %</td></tr>
-<tr><td><code>admin/config.mjs</code></td><td>Konfiguration</td><td align="right">54</td><td align="right">2,6 KB</td><td align="right">2,1 %</td></tr>
-<tr><td><b>Gesamt</b></td><td></td><td align="right"><b>2.460</b></td><td align="right"><b>125,7 KB</b></td><td align="right"><b>100 %</b></td></tr>
-</table>
-<sub>Gezählt werden Zeilen mit Code (ohne Leerzeilen). Der Anteil richtet sich nach der Dateigröße – genau so berechnet GitHub die Sprachen-Leiste.</sub>
-</details>
-
 <br>
 
 ## ✨ Funktionen
 
-### 🛡️ GWS | Administration
+### 🛡️ Server & Support
 
 <table>
 <tr><th align="left" width="190">Funktion</th><th align="left">Was sie macht</th></tr>
@@ -66,17 +50,17 @@ Die zwei Bots hinter dem Discord-Server von <a href="https://gevo-studio.de">Gev
 <tr><td>✅ <b>Verifizierung</b></td><td>Hausregeln mit Button: Ein Klick vergibt die Member-Rolle und schaltet den Server frei.</td></tr>
 <tr><td>📑 <b>Rechtliches</b></td><td>Impressum, Datenschutz, AGB und Widerruf als private Antwort mit Link zur Website.</td></tr>
 <tr><td>⌛ <b>Lieferzeit</b></td><td>Live-Panel mit 4 Stufen (3–5 bis ab 21 Werktage), offenen Bestellungen, Fast-Delivery-Slots, bevorzugter Bearbeitung (+80 %) und Next Day Delivery (+120 %).</td></tr>
-<tr><td>💎 <b>Preisliste</b></td><td>Einzelleistungen (UI Design, Frontend, Backend) und Spar-Bundles (Roleplay Core, Economy) mit privaten Detail-Preisen und Direktlink zum Kaufticket.</td></tr>
+<tr><td>💎 <b>Preisliste</b></td><td>Einzelleistungen und Spar-Bundles mit privaten Detail-Preisen und Direktlink zum Kaufticket.</td></tr>
 <tr><td>👋 <b>Willkommen</b></td><td>Begrüßungskarte mit Banner und Avatar für jedes neue Mitglied.</td></tr>
 <tr><td>🌍 <b>Zweisprachig</b></td><td>Jedes Panel hat einen <i>translate</i>-Button, der die englische Version nur für dich anzeigt.</td></tr>
 <tr><td>🔄 <b>Panel-Sync</b></td><td>Beim Start vergleicht der Bot alle Panels im Server mit dem Code und aktualisiert nur die, die sich geändert haben.</td></tr>
 </table>
 
-### 💳 GWS | WEB API
+### 💳 Zahlungen & Rechnungen
 
 <table>
 <tr><th align="left" width="190">Funktion</th><th align="left">Was sie macht</th></tr>
-<tr><td>🧾 <b>Rechnungen</b></td><td>Erstellt über die Website einen sicheren Stripe-Bezahllink und postet eine Rechnungskarte mit Bezahl-Button.</td></tr>
+<tr><td>🧾 <b>Rechnungen</b></td><td>Erstellt eine Rechnung mit sicherem Stripe-Bezahllink und postet eine Rechnungskarte mit Bezahl-Button.</td></tr>
 <tr><td>🟢 <b>Bezahlt-Erkennung</b></td><td>Prüft alle 45 Sekunden die Bestellungen. Bezahlte Rechnungen springen automatisch von Rot auf Grün („BEZAHLT“), Beleg und Rechnung gehen per E-Mail raus.</td></tr>
 <tr><td>🔔 <b>Zahlungserinnerung</b></td><td>Schickt dem Kunden eine DM mit Bezahllink und setzt die Karte auf „ÜBERFÄLLIG“.</td></tr>
 <tr><td>💳 <b>Zahlungsmethoden</b></td><td>Zeigt alle Methoden: Apple Pay, Link, Amazon Pay, Visa, Mastercard, American Express, Klarna und mehr.</td></tr>
@@ -98,7 +82,7 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    A["/rechnung"] --> B["💳 Stripe-Link<br/>über die Website"]
+    A["/rechnung"] --> B["💳 Stripe-Link<br/>wird erstellt"]
     B --> C["🔴 Rechnungskarte<br/>offen"]
     C -->|"Kunde zahlt"| D["🟢 BEZAHLT"]
     C -->|"/zahlungserinnerung"| E["🔔 DM an Kunden<br/>+ ÜBERFÄLLIG"]
@@ -110,12 +94,12 @@ flowchart LR
 ## 💬 Commands
 
 <table>
-<tr><th align="left">Command</th><th align="left">Optionen</th><th align="left">Bot</th><th align="left">Wer</th><th align="left">Was passiert</th></tr>
-<tr><td><code>/panel</code></td><td><code>typ</code>: Ticket-System, Verifizieren, Rechtliches, Lieferzeit oder Preisliste</td><td>Administration</td><td>Admin</td><td>Postet das Panel im aktuellen Kanal neu</td></tr>
-<tr><td><code>/lieferzeit</code></td><td><code>stufe</code> · <code>offene</code> · <code>fast_slots</code> · <code>bevorzugt</code> · <code>next_day</code><br><sub>alle optional</sub></td><td>Administration</td><td>Admin</td><td>Aktualisiert das Lieferzeit-Panel sofort</td></tr>
-<tr><td><code>/rechnung</code></td><td><code>produkt</code> · <code>preis</code><br><sub>optional: <code>kunde</code> · <code>beschreibung</code></sub></td><td>WEB API</td><td>Admin</td><td>Erstellt eine Rechnung mit Stripe-Bezahllink</td></tr>
-<tr><td><code>/zahlungserinnerung</code></td><td><code>rechnung</code><br><sub>optional: <code>kunde</code></sub></td><td>WEB API</td><td>Admin</td><td>Erinnert den Kunden per DM, Status „Überfällig“</td></tr>
-<tr><td><code>/zahlungen</code></td><td>–</td><td>WEB API</td><td>Alle</td><td>Zeigt alle Zahlungsmethoden</td></tr>
+<tr><th align="left">Command</th><th align="left">Optionen</th><th align="left">Wer</th><th align="left">Was passiert</th></tr>
+<tr><td><code>/panel</code></td><td><code>typ</code>: Ticket-System, Verifizieren, Rechtliches, Lieferzeit oder Preisliste</td><td>Admin</td><td>Postet das Panel im aktuellen Kanal neu</td></tr>
+<tr><td><code>/lieferzeit</code></td><td><code>stufe</code> · <code>offene</code> · <code>fast_slots</code> · <code>bevorzugt</code> · <code>next_day</code><br><sub>alle optional</sub></td><td>Admin</td><td>Aktualisiert das Lieferzeit-Panel sofort</td></tr>
+<tr><td><code>/rechnung</code></td><td><code>produkt</code> · <code>preis</code><br><sub>optional: <code>kunde</code> · <code>beschreibung</code></sub></td><td>Admin</td><td>Erstellt eine Rechnung mit Stripe-Bezahllink</td></tr>
+<tr><td><code>/zahlungserinnerung</code></td><td><code>rechnung</code><br><sub>optional: <code>kunde</code></sub></td><td>Admin</td><td>Erinnert den Kunden per DM, Status „Überfällig“</td></tr>
+<tr><td><code>/zahlungen</code></td><td>–</td><td>Alle</td><td>Zeigt alle Zahlungsmethoden</td></tr>
 </table>
 
 <br>
@@ -154,74 +138,28 @@ flowchart LR
 
 <br>
 
-## 🧰 Tech-Stack
-
-<table>
-<tr><td width="190"><b>Laufzeit</b></td><td>Node.js 20.6+ mit ES-Modulen</td></tr>
-<tr><td><b>Discord</b></td><td>discord.js v14 – Components V2, Slash-Commands, Buttons und Formulare</td></tr>
-<tr><td><b>Transcripts</b></td><td>Discord REST API, statische HTML-Seiten, Auslieferung über nginx</td></tr>
-<tr><td><b>Zahlungen</b></td><td>Stripe über die API der Gevo-Website</td></tr>
-<tr><td><b>Speicher</b></td><td>JSON-Dateien für Lieferzeit, Ticket-Nummern, Bewertungen und Rechnungen</td></tr>
-</table>
-
-<details>
-<summary><b>Projektstruktur</b></summary>
-<br>
-<pre>
-├── admin/                 GWS | Administration
-│   ├── bot.mjs            Tickets, Panels, Bewertungen, Commands
-│   ├── panels-v2.mjs      Design aller Panels (Components V2, DE + EN)
-│   ├── panels.mjs         Lieferzeit-Stufen, Preise, Emojis
-│   ├── transcript.mjs     Transcripts im Discord-Look
-│   ├── config.mjs         Server-, Kanal- und Rollen-IDs
-│   └── banners/           Banner und Kacheln der Panels
-├── bot.mjs                GWS | WEB API – Rechnungen und Zahlungen
-├── invoice-banner.png     Banner der Rechnungskarte
-└── assets/readme/         Bilder für diese README
-</pre>
-</details>
-
-<br>
-
-## 🚀 Starten
-
-<p>Beide Bots laufen im Projekt der Gevo-Website. Der WEB-API-Bot braucht deren API und Bestellungen.</p>
-
-<pre>
-npm install
-npm run admin-bot     # GWS | Administration
-npm run bot           # GWS | WEB API
-</pre>
-
-<p>Die Zugangsdaten stehen in <code>.env.local</code>:</p>
-
-<table>
-<tr><th align="left">Variable</th><th align="left">Bot</th><th align="left">Wofür</th></tr>
-<tr><td><code>ADMIN_BOT_TOKEN</code></td><td>Administration</td><td>Token des Bots</td></tr>
-<tr><td><code>TRANSCRIPT_DIR</code></td><td>Administration</td><td>Ordner für die Transcripts <sub>(optional)</sub></td></tr>
-<tr><td><code>TRANSCRIPT_BASE_URL</code></td><td>Administration</td><td>Öffentliche Adresse der Transcripts <sub>(optional)</sub></td></tr>
-<tr><td><code>DISCORD_BOT_TOKEN</code></td><td>WEB API</td><td>Token des Bots</td></tr>
-<tr><td><code>AUTH_DISCORD_ID</code></td><td>WEB API</td><td>Application-ID</td></tr>
-<tr><td><code>BOT_API_SECRET</code></td><td>WEB API</td><td>Geheimer Schlüssel für die Website-API</td></tr>
-<tr><td><code>SITE_URL</code></td><td>WEB API</td><td>Adresse der Website</td></tr>
-<tr><td><code>DISCORD_GUILD_ID</code></td><td>WEB API</td><td>Commands sofort im Server registrieren <sub>(optional)</sub></td></tr>
-<tr><td><code>BOT_EMBED_IMAGE</code></td><td>WEB API</td><td>Banner-Bild per Link statt Datei <sub>(optional)</sub></td></tr>
-</table>
-
-<p>Server-, Kanal- und Rollen-IDs stehen in <code>admin/config.mjs</code>. Für die Willkommensnachricht muss beim Administration-Bot im Discord Developer Portal der <b>Server Members Intent</b> aktiv sein.</p>
-
-<br>
-
 ## 🔒 Sicherheit
 
 <ul>
-<li>Tokens und Schlüssel stehen nur in <code>.env.local</code>, nie im Code.</li>
 <li>Admin-Commands sind nur für Administratoren sichtbar.</li>
 <li>Ticket-Kanäle sind privat: Nur Kunde, Team und Bot haben Zugriff.</li>
-<li>Transcripts: Alle Inhalte werden maskiert, Links nur über http(s), kein JavaScript, strikte CSP und ein privater Zufalls-Link (128 Bit).</li>
-<li>Die Website-API nimmt Rechnungen nur mit geheimem Schlüssel an.</li>
-<li>Ein Ticket wird erst gelöscht, wenn sein Transcript sicher gespeichert ist. Doppelklicks beim Schließen werden abgefangen.</li>
+<li>Transcripts sind geschützt: Alle Inhalte werden maskiert, kein JavaScript, strikte CSP und ein privater Zufalls-Link (128 Bit).</li>
+<li>Rechnungen laufen nur über eine gesicherte Schnittstelle mit geheimem Schlüssel.</li>
+<li>Kein Datenverlust: Ein Ticket wird erst gelöscht, wenn sein Transcript sicher gespeichert ist. Doppelklicks werden abgefangen.</li>
+<li>Zugangsdaten liegen getrennt vom Code.</li>
 </ul>
+
+<br>
+
+## 🛒 Jetzt bestellen
+
+<p align="center">
+<a href="https://discord.gg/j2P2CjaY8z"><img src="assets/readme/order.svg" width="840" alt="Interesse an dem Bot? Jetzt auf Discord bestellen"></a>
+</p>
+
+<p align="center">
+<a href="https://discord.gg/j2P2CjaY8z"><img src="https://img.shields.io/badge/Discord-Jetzt%20bestellen-1DFD85?style=for-the-badge&logo=discord&logoColor=1DFD85&labelColor=131414" alt="Jetzt auf Discord bestellen"></a>
+</p>
 
 <br>
 
@@ -229,7 +167,7 @@ npm run bot           # GWS | WEB API
 
 <img src="assets/readme/logo.gif" width="56" alt="GW Studio">
 
-<b>Gevo Web Studio</b> · <a href="https://gevo-studio.de">gevo-studio.de</a><br>
+<b>Gevo Web Studio</b> · <a href="https://gevo-studio.de">gevo-studio.de</a> · <a href="https://discord.gg/j2P2CjaY8z">Discord</a><br>
 <sub>© 2026 Gevo Web Studio · Alle Rechte vorbehalten</sub>
 
 </div>

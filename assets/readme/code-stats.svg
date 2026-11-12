@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="470" viewBox="0 0 840 470" role="img" aria-label="Code-Verteilung: JavaScript 100 %. Panels und Design 35,5 %, Transcript-System 32,6 %, Tickets und Logik 18,0 %, Rechnungs-Bot 11,7 %, Konfiguration 2,1 %.">
+  <defs>
+    <linearGradient id="bar" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#1DFD85"/>
+      <stop offset="1" stop-color="#10d670"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.9" cy="0" r="0.75">
+      <stop offset="0" stop-color="#1DFD85" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#1DFD85" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect x="0.5" y="0.5" width="839" height="469" rx="16" fill="#0e1110" stroke="#20302a"/>
+  <rect x="0.5" y="0.5" width="839" height="469" rx="16" fill="url(#glow)"/>
+
+  <g font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif">
+    <text x="32" y="46" fill="#1DFD85" font-size="13" font-weight="700" letter-spacing="2.6">CODE-VERTEILUNG</text>
+    <text x="32" y="70" fill="#8a9690" font-size="13">Gemessen nach Code-Größe – so zählt auch GitHub die Sprachen</text>
+
+    <!-- Sprache -->
+    <text x="32" y="114" fill="#ffffff" font-size="15" font-weight="700">JavaScript</text>
+    <text x="32" y="132" fill="#6f7a75" font-size="12">125,7 KB Code · ES-Module</text>
+    <rect x="250" y="104" width="490" height="10" rx="5" fill="url(#bar)"/>
+    <text x="808" y="114" fill="#ffffff" font-size="15" font-weight="700" text-anchor="end">100 %</text>
+
+    <line x1="32" x2="808" y1="156" y2="156" stroke="#1f2b26"/>
+
+    <!-- Module -->
+    <g font-size="14">
+      <text x="32" y="192" fill="#ffffff" font-weight="600">Panels &amp; Design</text>
+      <text x="32" y="210" fill="#6f7a75" font-size="12">5 Panels · Deutsch + Englisch</text>
+      <rect x="250" y="182" width="490" height="10" rx="5" fill="#1a2320"/>
+      <rect x="250" y="182" width="174.1" height="10" rx="5" fill="url(#bar)"/>
+      <text x="808" y="192" fill="#ffffff" font-weight="700" text-anchor="end">35,5 %</text>
+
+      <text x="32" y="236" fill="#ffffff" font-weight="600">Transcript-System</text>
+      <text x="32" y="254" fill="#6f7a75" font-size="12">Discord-Look · alle Dateien</text>
+      <rect x="250" y="226" width="490" height="10" rx="5" fill="#1a2320"/>
+      <rect x="250" y="226" width="159.9" height="10" rx="5" fill="url(#bar)"/>
+      <text x="808" y="236" fill="#ffffff" font-weight="700" text-anchor="end">32,6 %</text>
+
+      <text x="32" y="280" fill="#ffffff" font-weight="600">Tickets &amp; Logik</text>
+      <text x="32" y="298" fill="#6f7a75" font-size="12">Tickets · Bewertungen</text>
+      <rect x="250" y="270" width="490" height="10" rx="5" fill="#1a2320"/>
+      <rect x="250" y="270" width="88.1" height="10" rx="5" fill="url(#bar)"/>
+      <text x="808" y="280" fill="#ffffff" font-weight="700" text-anchor="end">18,0 %</text>
+
+      <text x="32" y="324" fill="#ffffff" font-weight="600">Rechnungs-Bot</text>
+      <text x="32" y="342" fill="#6f7a75" font-size="12">Stripe · Erinnerungen</text>
+      <rect x="250" y="314" width="490" height="10" rx="5" fill="#1a2320"/>
+      <rect x="250" y="314" width="57.5" height="10" rx="5" fill="url(#bar)"/>
+      <text x="808" y="324" fill="#ffffff" font-weight="700" text-anchor="end">11,7 %</text>
+
+      <text x="32" y="368" fill="#ffffff" font-weight="600">Konfiguration</text>
+      <text x="32" y="386" fill="#6f7a75" font-size="12">Kanäle · Rollen</text>
+      <rect x="250" y="358" width="490" height="10" rx="5" fill="#1a2320"/>
+      <rect x="250" y="358" width="10.3" height="10" rx="5" fill="url(#bar)"/>
+      <text x="808" y="368" fill="#ffffff" font-weight="700" text-anchor="end">2,1 %</text>
+    </g>
+
+    <line x1="32" x2="808" y1="410" y2="410" stroke="#1f2b26"/>
+
+    <text x="32" y="442" fill="#8a9690" font-size="13"><tspan fill="#ffffff" font-weight="700">2.460</tspan> Zeilen Code<tspan dx="14" fill="#2f4038">•</tspan><tspan dx="14" fill="#ffffff" font-weight="700">6</tspan> Dateien<tspan dx="14" fill="#2f4038">•</tspan><tspan dx="14" fill="#ffffff" font-weight="700">2</tspan> Bots<tspan dx="14" fill="#2f4038">•</tspan><tspan dx="14" fill="#ffffff" font-weight="700">5</tspan> Slash-Commands<tspan dx="14" fill="#2f4038">•</tspan><tspan dx="14" fill="#ffffff" font-weight="700">28</tspan> Buttons</text>
+  </g>
+</svg>
